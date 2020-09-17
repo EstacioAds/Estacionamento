@@ -10,9 +10,22 @@ package estacionamento;
  * @author franw
  */
 public class Carro {
+   
     private String placa;
     private String modelo;
     private String cor;
+    private static int totalCarros = 0;
+    
+    Carro(String placa, String modelo, String cor){
+        this.placa = placa;
+        this.modelo = modelo;
+        this.cor = cor;
+        totalCarros++;
+    }
+    
+    public static int getTotalCarros(){
+       return Carro.totalCarros;
+    }
     
     public void setPlaca(String placa){
         this.placa = placa;
@@ -20,5 +33,22 @@ public class Carro {
     public String getPlaca(){
        return this.placa;
     }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
     
 }
+
