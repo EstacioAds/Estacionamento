@@ -16,11 +16,18 @@ public class Estacionamento {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Carro carroZe = new Carro();
-        carroZe.setPlaca("FRR555");
+        Carro carroZe = new Carro("FRR555","C4", "Prata");
+        carroZe.setPlaca("FRR777");
+        
         System.out.println("PLACA:" +carroZe.getPlaca());
-  
+        
+        Carro carroMaria = new Carro("iiiii7", "Golf", "Vermelho");
+        
+        System.out.println("PLACA:" + carroMaria.getPlaca());
+        
+        System.out.println("Total Carros: " + Carro.getTotalCarros());
               
     }
     
 }
+
