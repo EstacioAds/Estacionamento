@@ -15,17 +15,19 @@ public class Estacionamento {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        Carro carroZe = new Carro("FRR555","C4", "Prata");
-        carroZe.setPlaca("FRR777");
-        
-        System.out.println("PLACA:" +carroZe.getPlaca());
-        
-        Carro carroMaria = new Carro("iiiii7", "Golf", "Vermelho");
-        
-        System.out.println("PLACA:" + carroMaria.getPlaca());
-        
-        System.out.println("Total Carros: " + Carro.getTotalCarros());
+       int alturas[] = {180,170,150,145,192};
+       System.out.println(alturas[2]);
+       
+      Carro ze = new Carro("X054");
+      Carro maria = new Carro("TYR8");
+      Carro joana = new Carro("DD77");
+       
+      Carro carros[] = {ze,maria,joana}; 
+      System.out.println(carros[0].getPlaca());
+      System.out.println(carros[1].getPlaca());
+      System.out.println(carros[2].getPlaca());
+      
+      // Refazer a impressão de placas usando um laço for.
               
     }
     
